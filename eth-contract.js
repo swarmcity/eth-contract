@@ -47,23 +47,24 @@ class EthContract extends PolymerElement {
         reflectToAttribute: true
       },
       abi: {
-        type: String,
+        type: Object,
       }
     };
   }
 
   _start(){
-    let abi = '';
     if(!this.abi && this.contractAddress){
-      abi = this._fetchAbi(this.contractAddress)
+      this.abi = this._fetchAbi(this.contractAddress)
+    } else if (this.abi && this.contractAddress){
+      this.abi = this.abi;
     } else {
-      abi = this.abi;
+      this.error = "abi and or contract address not supplied"
     }
     // TODO ensure this gets called after the above 
     if(this.publicKey){
-      this.contractInstance = this.eth.contract(contractAbi).at(this.publicKey);
+      this.contractInstance = this.eth.contract(abi).at(this.publicKey);
     } else {
-      this.contractInstance = this.eth.contract(contractAbi);
+      this.contractInstance = this.eth.contract(abi);
     }
   }
 
