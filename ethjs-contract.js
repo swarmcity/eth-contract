@@ -1,5 +1,5 @@
 import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
-import 'ethjs-element';
+import 'eth-connect';
 
 /**
  * `ethjs-contract`
@@ -17,7 +17,7 @@ class EthjsContract extends PolymerElement {
           display: block;
         }
       </style>
-      <ethjs-element eth="{{eth}}"></ethjs-element></ethjs-element>
+      <eth-connect eth="{{eth}}"></eth-connect>
     `;
   }
   static get properties() {

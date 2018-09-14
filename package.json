@@ -3,12 +3,12 @@
   "version": "1.0.0",
   "author": "@bkawk",
   "license": "MIT",
-  "repository": "https://github.com/bkawk/ethjs-contract",
+  "repository": "https://github.com/swarmcity/eth-contract",
   "description": "A Web Component that fetches an Ethereum contracts ABI and exposes a contract instance.",
   "main": "ethjs-contract.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "ethjs-element": "^1.0.0"
+    "eth-connect": "git+https://github.com/swarmcity/eth-connect.git",
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
