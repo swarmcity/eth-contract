@@ -8,7 +8,7 @@
   "main": "ethjs-contract.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
-    "eth-connect": "git+https://github.com/swarmcity/eth-connect.git",
+    "eth-connect": "git+https://github.com/swarmcity/eth-connect.git"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
