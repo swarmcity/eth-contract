@@ -2,14 +2,14 @@ import {html, PolymerElement} from '@polymer/polymer/polymer-element.js';
 import 'eth-connect';
 
 /**
- * `ethjs-contract`
+ * `eth-contract`
  * A Web Component that fetches an Ethereum contracts ABI and exposes a contract instance.
  *
  * @customElement
  * @polymer
  * @demo demo/index.html
  */
-class EthjsContract extends PolymerElement {
+class EthContract extends PolymerElement {
   static get template() {
     return html`
       <style>
@@ -86,4 +86,4 @@ class EthjsContract extends PolymerElement {
     })
   }
 
-} window.customElements.define('ethjs-contract', EthjsContract);
+} window.customElements.define('eth-contract', EthContract);
